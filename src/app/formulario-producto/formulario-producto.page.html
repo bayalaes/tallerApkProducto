@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>{{ id ? 'Editar Producto' : 'Agregar Producto' }}</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="regresar()">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="formularioProducto" (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Presupuesto</ion-label>
+      <ion-input formControlName="presupuesto"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Unidad</ion-label>
+      <ion-input formControlName="unidad"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input formControlName="nombre"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Cantidad</ion-label>
+      <ion-input formControlName="cantidad" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Valor Unitario</ion-label>
+      <ion-input formControlName="valorUnitario" type="number"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Valor Total</ion-label>
+      <ion-input formControlName="valorTotal" type="number" [disabled]="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Fecha de Adquisición</ion-label>
+      <ion-input formControlName="fechaAdquisicion" type="date"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Proveedor</ion-label>
+      <ion-input formControlName="proveedor"></ion-input>
+    </ion-item>
+    <ion-button expand="full" type="submit">Guardar</ion-button>
+  </form>
+</ion-content>

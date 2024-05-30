@@ -1,0 +1,14 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "presupuesto": 1000,
+      "unidad": "Departamento de Ventas",
+      "nombre": "Portátil HP",
+      "cantidad": 5,
+      "valorUnitario": 800,
+      "fechaAdquisicion": "2024-05-30",
+      "proveedor": "Tech Solutions Inc."
+    }
+  ]
+}
