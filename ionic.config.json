@@ -1,0 +1,7 @@
+{
+  "name": "gestorProductos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
