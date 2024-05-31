@@ -1,14 +1,24 @@
 {
   "productos": [
     {
-      "id": "1",
-      "presupuesto": 1000,
+      "presupuesto": 123,
       "unidad": "Departamento de Ventas",
       "nombre": "Portátil HP",
-      "cantidad": 5,
+      "cantidad": 3,
       "valorUnitario": 800,
-      "fechaAdquisicion": "2024-05-30",
-      "proveedor": "Tech Solutions Inc."
+      "fechaAdquisicion": "2020-05-30",
+      "proveedor": "Tech Solutions Inc.",
+      "id": "1"
+    },
+    {
+      "presupuesto": 300,
+      "unidad": "medicina",
+      "nombre": "acetaminofen",
+      "cantidad": 2,
+      "valorUnitario": 1000,
+      "fechaAdquisicion": "2222-02-22",
+      "proveedor": "drogeria",
+      "id": "2"
     }
   ]
 }
